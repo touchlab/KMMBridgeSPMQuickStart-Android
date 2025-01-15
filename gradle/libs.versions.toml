@@ -6,7 +6,7 @@ compileSdk = "35"
 
 # Dependencies
 kotlin = "2.1.0"
-android-gradle-plugin = "8.2.2"
+android-gradle-plugin = "8.8.0"
 
 compose = "1.7.6"
 composeCompiler = "1.5.15"
@@ -38,14 +38,15 @@ compose-activity = { module = "androidx.activity:activity-compose", version.ref 
 android-desugaring = { module = "com.android.tools:desugar_jdk_libs", version.ref = "android-desugaring" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 
-#sharedlib-analytics = { module = "co.touchlab.kmmbridgespmquickstart:analytics-android-debug", version.ref = "sharedlib" }
-#sharedlib-breeds = { module = "co.touchlab.kmmbridgespmquickstart:breeds-android-debug", version.ref = "sharedlib" }
+sharedlib-analytics = { module = "co.touchlab.kmmbridgespmquickstart:analytics-android-debug", version.ref = "sharedlib" }
+sharedlib-breeds = { module = "co.touchlab.kmmbridgespmquickstart:breeds-android-debug", version.ref = "sharedlib" }
 
 [plugins]
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
 android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 [bundles]
 app-ui = [
